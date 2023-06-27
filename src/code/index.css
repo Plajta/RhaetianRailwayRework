@@ -1,0 +1,57 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+    height: 80px;
+    background-color: red;
+}
+
+.topnav #left {
+    color: #f2f2f2;
+    text-align: center;
+    text-decoration: none;
+    font-size: 17px;
+    margin-top: 15px;
+}
+
+.topnav #right{
+    margin-top: 30px;
+}
+
+.topnav #left{
+    margin-left: 15px;
+    float: left;
+}
+
+.topnav a, img#right{
+    float: right;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 32px;
+}
+
+.topnav img#rightinherit{
+    padding-right: 20px;
+    height: 30px;
+    float: left;
+}
+
+.topnav img#right{
+    height: 30px;
+}
+
+.topnav a#right{
+    height: 30px;
+    font-size: 30px;
+    text-decoration: none;
+    color: white;
+}
+
+#addontext{
+    margin-bottom: 20px;
+    float: left;
+}

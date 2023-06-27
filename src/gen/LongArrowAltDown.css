@@ -1,0 +1,7 @@
+.long-arrow-alt-down4 {
+  position: relative;
+  background-color: var(--color-gray-200);
+  width: 100%;
+  height: 25px;
+  overflow: hidden;
+}

@@ -69,9 +69,16 @@ body {
     background-color: white;
     border-radius: 30px;
 }
-.info{
+.info-index{
     width: 30%;
     height: 560px;
+    background-color: white;
+    border-radius: 30px;
+}
+
+.info-after-select{
+    width: 30%;
+    height: 800px;
     background-color: white;
     border-radius: 30px;
 }

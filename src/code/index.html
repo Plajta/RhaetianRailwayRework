@@ -5,8 +5,13 @@
         <script src="index.js"></script> 
     </head>
     <body id="background">
+        <!--scripts-->
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.css" />
+
         <div class="topnav">
-            <img id="left" src="./imgs/logo_rhb_en.svg">
+            <img id="left" class="main-logo" src="./imgs/logo_rhb_en.svg" onclick='window.location.href = "./index.html"'>
             <a id="right" href="balls2"><div><img id="rightinherit" src="./imgs/britain_flag.png"></img><snap id="addontext">EN</snap></div></a>
             <img id="right" src="./imgs/search.svg">
             <img id="right" src="./imgs/shop.svg">
@@ -18,7 +23,8 @@
             <p id="white"> The world of the Rhaetian Railway has much to offer. Enjoy a trip through the Grisons with our <br> culinary delights or take in a piece of railway history with our steam and nostalgia trips. <br> We have the right rail experience for every taste - let yourself be inspired here! </p>
             <div class="body-child">
                 <div class="mapbox" style="float: left;">
-                    <iframe src="./map.html" title="map" height="100%" width="100%"></iframe>
+                    <!--Put map code here-->
+                    <div id="map"></div>
                 </div>
                 <div class="info-index" style="float: left; margin-left: 5%; margin-right: 5%;">
                     <div class="indent">
@@ -74,5 +80,29 @@
                 </div>
             </div>
         </div>
+        <script>
+            const apiKey = '5b3ce3597851110001cf624812f7f40d83174d9f92eec38901a1af8a';
+        
+            // Chur
+            const startCoords = [9.5297, 46.8503];
+            // Bern
+            const endCoords = [7.4474, 46.9480];
+        
+            const apiUrl = `https://api.openrouteservice.org/v2/directions/driving-car?api_key=${apiKey}&start=${startCoords[0]},${startCoords[1]}&end=${endCoords[0]},${endCoords[1]}`;
+        
+            axios.get(apiUrl)
+                .then(response => {
+                    const route = response.data.features[0].geometry.coordinates;
+
+                    const map = L.map('map').setView([46.9480, 7.4474], 8);
+                    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                        attribution: 'Map data &copy; OpenStreetMap contributors'
+                    }).addTo(map);
+            
+                })
+                .catch(error => {
+                console.error(error);
+                });
+        </script>
     </body>
 </html>

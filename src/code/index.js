@@ -101,3 +101,12 @@ function switch_destinations(){
     document.getElementsByClassName("from")[0].value = arrival
     document.getElementsByClassName("to")[0].value = depart
 }
+
+function InvokeAction(){
+    //fuck you
+    window.location.href = "./search_invoked.html"
+}
+
+function GoBack(){
+    window.location.href = "./index.html"
+}

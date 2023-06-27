@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Маршрут Chur → Bern</title>
+  <style>
+    #map {
+      height: 400px;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <h1>Маршрут Chur → Bern</h1>
+  <div id="map"></div>
+
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.css" />
+
+  <script>
+    // Замените YOUR_API_KEY на ваш собственный ключ API OpenRouteService
+    const apiKey = '5b3ce3597851110001cf624812f7f40d83174d9f92eec38901a1af8a';
+
+    // Координаты Chur
+    const startCoords = [9.5297, 46.8503];
+    // Координаты Bern
+    const endCoords = [7.4474, 46.9480];
+
+    const apiUrl = `https://api.openrouteservice.org/v2/directions/driving-car?api_key=${apiKey}&start=${startCoords[0]},${startCoords[1]}&end=${endCoords[0]},${endCoords[1]}`;
+
+    axios.get(apiUrl)
+      .then(response => {
+        const route = response.data.features[0].geometry.coordinates;
+
+        // Инициализация карты
+        const map = L.map('map').setView([46.9480, 7.4474], 8); // Важное исправление
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+          attribution: 'Map data &copy; OpenStreetMap contributors'
+        }).addTo(map);
+
+        // Добавление маршрута на карту
+        // Изменение стиля полилинии
+        L.polyline(route.map(coord => [coord[1], coord[0]]), { color: 'red' }).addTo(map);
+
+      })
+      .catch(error => {
+        console.error(error);
+      });
+  </script>
+</body>
+</html>

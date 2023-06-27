@@ -221,6 +221,7 @@ h1{
     margin-left: 15px;
     cursor: pointer;
     margin-top: 20px;
+    font-size: 20px;
 }
 
 #train-name{
@@ -260,4 +261,8 @@ p#train-spec{
 
 img.train-spec-info{
     margin-top: -3px;
+}
+
+.one-train{
+    margin-top: 30px;
 }

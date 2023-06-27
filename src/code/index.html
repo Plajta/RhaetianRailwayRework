@@ -2,6 +2,7 @@
 <html>
     <head>
         <link rel="stylesheet" href="index.css">
+        <script src="index.js"></script> 
     </head>
     <body>
         <div class="topnav">
@@ -11,6 +12,32 @@
             <img id="right" src="./imgs/shop.svg">
             <img id="right" src="./imgs/account.png">
             <a id="right" href="#balls">Rhateian travel experiences</a>
+        </div>
+        <div class="body">
+            <h1 id="white"> A fascinatingly different travel experience </h1>
+            <p id="white"> The world of the Rhaetian Railway has much to offer. Enjoy a trip through the Grisons with our <br> culinary delights or take in a piece of railway history with our steam and nostalgia trips. <br> We have the right rail experience for every taste - let yourself be inspired here! </p>
+            <div class="body-child">
+                <div class="mapbox" style="float: left;">
+
+                </div>
+                <div class="info" style="float: left; margin-left: 5%; margin-right: 5%;">
+                    <div class="indent">
+                        <h1>Tickets</h1>
+                        <div class="dropdown">
+                            <button class="dropbtn" onclick="Register()">Dropdown</button>
+                            <div class="dropdown-content">
+                              <a href="#">65 years or more<br><button onclick="AddToIndex(0)">+</button>0<button onclick="DecreaseToIndex(0)">-</button></a>
+                              <a href="#">Adult 26-64 years<br><button onclick="AddToIndex(1)">+</button>0<button onclick="DecreaseToIndex(1)">-</button></a>
+                              <a href="#">Junior 18-25 years<br><button onclick="AddToIndex(2)">+</button>0<button onclick="DecreaseToIndex(2)">-</button></a>
+                              <a href="#">Junior 15-17 years<br><button onclick="AddToIndex(3)">+</button>0<button onclick="DecreaseToIndex(3)">-</button></a>
+                              <a href="#">Child 10-14 years<br><button onclick="AddToIndex(4)">+</button>0<button onclick="DecreaseToIndex(4)">-</button></a>
+                              <a href="#">Child 6-9 years<br><button onclick="AddToIndex(5)">+</button>0<button onclick="DecreaseToIndex(5)">-</button></a>
+                              <a href="#">Child 0-5 years<br><button onclick="AddToIndex(6)">+</button>0<button onclick="DecreaseToIndex(6)">-</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </body>
 </html>

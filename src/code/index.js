@@ -110,3 +110,7 @@ function InvokeAction(){
 function GoBack(){
     window.location.href = "./index.html"
 }
+
+function Buy(){
+    window.location.href = "./process.html"
+}

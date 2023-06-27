@@ -24,7 +24,7 @@
                     <div class="indent">
                         <h1>Tickets</h1>
                         <div class="dropdown">
-                            <button class="dropbtn" onclick="Register(true)">Dropdown</button>
+                            <button class="dropbtn" onclick="Register(true)"><b>Select passangers</b></button>
                             <div class="dropdown-content">
                                 <a href="#">65 years or more<button onclick="AddToIndex(0)">+</button>0<button onclick="DecreaseToIndex(0)">-</button></a>
                                 <a href="#">Adult 26-64 years<button onclick="AddToIndex(1)">+</button>0<button onclick="DecreaseToIndex(1)">-</button></a>
@@ -37,9 +37,39 @@
                             </div>
                         </div>
                     </div>
-                    <div class="indent" style="margin-top: 25px;">
-                        <h2>Date of departure: <input type="datetime-local" id="DateTime"></h2>
-                        <h2>Date of arrival: <input type="datetime-local" id="DateTime"></div><h2>
+                    <div class="indent">
+                        <h2 style="float: left;">Date: <input type="datetime-local" id="DateTime"></h2>
+                        <div class="timeselect" style="float: left; margin-left: 10px; margin-top: 19px;">
+                            <button onclick="shift_time(true)"><b><</b></button>
+                            <span id="time"><b id="timeshow">12:00</b></span>
+                            <button onclick="shift_time(false)"><b>></b></button>
+                        </div>
+                    </div>
+                    <div class="indent" style="margin-top: 85px;">
+                        <div>
+                            <button id="arrowbutton" style="float: left; height: 156px; margin-right: 15px;" onclick="switch_destinations()">
+                                <div>
+                                    <img src = "./imgs/arrow.svg" alt="arrow" style="float: left; transform: rotate(180deg);" id="arrow"/>
+                                    <img src = "./imgs/arrow.svg" alt="arrow" style="float: left;" id="arrow"/>
+                                </div>
+                            </button>
+                            <form style="float: left;">
+                                <h2 class="label"><b>From:</b></h2>
+                                <input id="sameheight"  type="text" class="from" name="fname" value="station">
+                                <h2 class="label"><b>To:</b></h2>
+                                <input id="sameheight"  type="text" class="to" name="lname" value="station">
+                            </form> 
+                        </div>
+                    </div>
+                    <div class="indent" style="margin-top: 265px;">
+                        <div class="dropdown" style="float: left;">
+                            <button class="dropbtn" onclick="OpenClassMenu()"><b id="ClassChange">class</b></button>
+                            <div class="dropdown-content">
+                                <a href="#" onclick="CloseClassMenu(0)">1. Class</a>
+                                <a href="#" onclick="CloseClassMenu(1)">1. Class</a>
+                            </div>
+                        </div>
+                        <button onclick="InvokeAction()" style="float: left;" class="invoke_action_button">Search</button>
                     </div>
                 </div>
             </div>

@@ -122,8 +122,8 @@ h1{
 }
 
 .dropbtn {
-    background-color: red;
-    color: white;
+    background-color: #D9D9D9;
+    color: black;
     padding: 16px;
     font-size: 16px;
     border: none;
@@ -139,3 +139,67 @@ h1{
 /*.dropdown:active .dropdown-content {display: block;}*/
 
 .dropdown:hover .dropbtn {background-color: rgb(156, 0, 0);}
+
+.timeselect button{
+    background-color: #D9D9D9;
+    border: none;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+}
+
+.timeselect{
+    background-color: #D9D9D9;
+    color: black;
+    padding: 10px 10px ;
+}
+
+#DateTime{
+    border: none;
+    background-color: #D9D9D9;
+    padding: 10px 10px ;
+}
+
+.from, .to{
+    border: none;
+    background-color: #D9D9D9;
+    padding-bottom: 7px;
+}
+
+#sameheight{
+    height: 42px;
+    background-color: #D9D9D9;
+    text-align: center;
+}
+.label{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+#arrow{
+    border: none;
+}
+
+#arrowbutton{
+    border: none;
+    background-color: #D9D9D9;
+    margin-right: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.invoke_action_button{
+    border: none;
+    background-color: red;
+    color: white;
+    width: 115px;
+    height: 51px;
+    border-radius: 5px;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+.invoke_action_button:hover{
+    background-color: rgb(156, 0, 0);
+}

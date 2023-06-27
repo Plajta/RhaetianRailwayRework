@@ -1,15 +1,14 @@
-var assign_people = false
-var All_people = ['65 years or more<br><button onclick="AddToIndex(0)">+</button>0<button onclick="DecreaseToIndex(0)">-</button>', 
-'Adult 26-64 years<br><button onclick="AddToIndex(1)">+</button>0<button onclick="DecreaseToIndex(1)">-</button>', 
-'Junior 18-25 years<br><button onclick="AddToIndex(2)">+</button>0<button onclick="DecreaseToIndex(2)">-</button>', 
-'Junior 15-17 years<br><button onclick="AddToIndex(3)">+</button>0<button onclick="DecreaseToIndex(3)">-</button>', 
-'Child 10-14 years<br><button onclick="AddToIndex(4)">+</button>0<button onclick="DecreaseToIndex(4)">-</button>', 
-'Child 6-9 years<br><button onclick="AddToIndex(5)">+</button>0<button onclick="DecreaseToIndex(5)">-</button>', 
-'Child 0-5 years<br><button onclick="AddToIndex(6)">+</button>0<button onclick="DecreaseToIndex(6)">-</button>']
+var All_people = ['65 years or more<button onclick="AddToIndex(0)">+</button>0<button onclick="DecreaseToIndex(0)">-</button>', 
+'Adult 26-64 years<button onclick="AddToIndex(1)">+</button>0<button onclick="DecreaseToIndex(1)">-</button>', 
+'Junior 18-25 years<button onclick="AddToIndex(2)">+</button>0<button onclick="DecreaseToIndex(2)">-</button>', 
+'Junior 15-17 years<button onclick="AddToIndex(3)">+</button>0<button onclick="DecreaseToIndex(3)">-</button>', 
+'Child 10-14 years<button onclick="AddToIndex(4)">+</button>0<button onclick="DecreaseToIndex(4)">-</button>', 
+'Child 6-9 years<button onclick="AddToIndex(5)">+</button>0<button onclick="DecreaseToIndex(5)">-</button>', 
+'Child 0-5 years<button onclick="AddToIndex(6)">+</button>0<button onclick="DecreaseToIndex(6)">-</button>',
+"Confirm"]
 
-function Register(){
-    console.log(document.getElementsByClassName("dropdown-content")[0].style["display"])
-    if (!assign_people){
+function Register(assign_switch){
+    if (assign_switch){
         document.getElementsByClassName("dropdown-content")[0].style["display"] = "block"
         assign_people = true
     }

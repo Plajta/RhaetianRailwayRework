@@ -170,16 +170,34 @@ function ShowMap(){
     var diag = document.getElementById("main-show-diag")
     var map = document.getElementById("main-show-map")
 
+    var map_button = document.getElementById("map_button")
+    var diag_button = document.getElementById("diag_button")
+
     map.style["display"] = "block"
     diag.style["display"] = "none"
+    
+    map_button.style.backgroundColor = "red"
+    map_button.style.color = "white"
+
+    diag_button.style.backgroundColor = "white"
+    diag_button.style.color = "black"
 }
 
 function ShowDiag(){
     var diag = document.getElementById("main-show-diag")
     var map = document.getElementById("main-show-map")
 
+    var map_button = document.getElementById("map_button")
+    var diag_button = document.getElementById("diag_button")
+
     map.style["display"] = "none"
     diag.style["display"] = "block"
+
+    diag_button.style.backgroundColor = "red"
+    diag_button.style.color = "white"
+
+    map_button.style.backgroundColor = "white"
+    map_button.style.color = "black"
 }
 
 window.onload = () => {

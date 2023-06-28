@@ -4,7 +4,8 @@ body {
 }
 
 body#background{
-    background-image: url("./imgs/background.png");
+    background: url("./imgs/background4.jpg") no-repeat;
+    background-size: 1920px 1200px; 
 }
 
 .topnav {

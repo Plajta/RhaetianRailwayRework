@@ -11,6 +11,7 @@ var destination_switch = false
 var depart = ""
 var arrival = ""
 var class_select = ""
+var seat_index = ""
 
 function Register(assign_switch){
     //gui
@@ -135,3 +136,32 @@ function Buy(){
     window.location.href = "./insert.html"
 }
 
+function RequestSeats(){
+    var modal = document.getElementById("myModal");
+    modal.style.display = "block";
+}
+
+function Close(){
+    var modal = document.getElementById("myModal");
+    modal.style.display = "none";
+}
+
+function ChangePassangers(){
+    //empty
+}
+
+function SelectSeat(seat_idx){
+    var info = document.getElementById("SelectedSeats")
+    info.innerText = "selected seats: " + seat_idx.toString()
+    seat_index = seat_idx.toString()
+}
+
+function ConfirmSelection(){
+    var text_to_change = document.getElementById("changeable-text")
+    text_to_change.innerText = "Seats: " + seat_index
+    Close()
+}
+
+function FinalValidation(){
+    window.location.href = "./process.html"
+}

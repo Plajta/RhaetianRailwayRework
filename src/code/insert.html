@@ -25,10 +25,10 @@
                         <img src="./imgs/train.svg" style="float: left; margin-left: 27px;"></img>
                         <p style="float: left; margin-top: 0px;">RE 1729</p>
                     </div>
-                    <p style="float: left;">no seats taken (yet)</p>
+                    <p style="float: left;" id="changeable-text">no seats taken (yet)</p>
                     <h2 id="seat-info" style="float: left;">Free of charge</h2>
                     <div class="vl"></div>
-                    <img id="seat-rewrite" src="./imgs/rewrite.svg" style="float: left;">
+                    <img id="seat-rewrite" src="./imgs/rewrite.svg" style="float: left;" onclick="RequestSeats()">
                 </div>
             </div>
             <div class="indent">
@@ -40,7 +40,7 @@
                 <b id="box">3x Adult</b>
                 <h2 id="seat-info" style="float: left;">15 CHF</h2>
                 <div class="vl"></div>
-                <img id="seat-rewrite" src="./imgs/rewrite.svg" style="float: left;">
+                <img id="seat-rewrite" src="./imgs/rewrite.svg" style="float: left;" onclick="ChangePassangers()">
             </div>
             <div class="indent">
                 <h2 style="margin-right: 800px; margin-bottom: 10px;">Final overview</h2>
@@ -53,7 +53,24 @@
                     <p><b>To</b> station</p>
                     <p><b>1. Class</b></p>
                 </div>
-                <button id="confirm">Confirm</button>
+                <button id="confirm" onclick="FinalValidation()">Confirm</button>
+            </div>
+
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close" onclick="Close()">&times;</span>
+                <p>Train seating map:</p>
+                <img src="./imgs/train2.png" width="100%" usemap="#trainmap" alt="train-schema">
+                <map name="trainmap">
+                    <area shape="rect" coords="150,80,180,120" alt="Computer" onclick="SelectSeat(25)">
+                </map>
+
+                <p id="SelectedSeats">Selected seats: none</p>
+
+                <button id="confirm2" onclick="ConfirmSelection()">Confirm seat book</button>
             </div>
         </div>
     </body>

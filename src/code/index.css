@@ -309,3 +309,31 @@ img.train-spec-info{
     background-color: red;
     color: white;
 }
+
+.body-child-window{
+    width: 90%;
+    height: 800px;
+    background-color: white;
+    border-radius: 21px;
+    margin-left: 5%;
+    margin-top: 2%;
+}
+
+#seat-info{
+    color: green;
+    height: 59px;
+    margin-left: 500px;
+    margin-right: 20px;
+}
+
+#seat-rewrite{
+    margin-top: 20px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.vl{
+    border-left: 2px solid black;
+    height: 60px;
+    float: left;
+}

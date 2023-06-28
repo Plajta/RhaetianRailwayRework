@@ -132,6 +132,6 @@ function GoBack(){
 }
 
 function Buy(){
-    window.location.href = "./process.html"
+    window.location.href = "./insert.html"
 }
 

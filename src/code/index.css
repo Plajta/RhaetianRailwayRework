@@ -4,7 +4,7 @@ body {
 }
 
 body#background{
-    background: url("./imgs/background4.jpg") no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)), url("./imgs/background4.jpg") no-repeat;
     background-size: 1920px 1200px; 
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -454,4 +454,12 @@ img.train-spec-info{
     background-color: rgb(216, 208, 208);
     color: black;
     padding: 5px 5px;
+}
+
+#white-background{
+    background-color: white;
+    color: black;
+    padding: 8px 8px;
+    width: 50%;
+    border-radius: 5px;
 }

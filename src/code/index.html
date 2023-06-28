@@ -24,12 +24,22 @@
             <div class="body-child">
                 <div class="mapbox" style="float: left;">
                     <div>
-                        <button id="map_button" onclick="ShowMap()">Map</button>
-                        <button id="diag_button" onclick="ShowDiag()">Diagram</button>
+                        <button id="map_button" onclick="ShowMap()">Map</button><button id="diag_button" onclick="ShowDiag()">Diagram</button>
                     </div>
                     <!--Put map code here-->
                     <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1HBkKxkI8m9BoMldh-IZqHVeRkWdxiUQ&ehbc=2E312F" width="100%" height="100%" id="main-show-map"></iframe>
-                    <img src="./imgs/account.png" id="main-show-diag">
+                    <div id="main-show-diag">
+                        <link rel="stylesheet" href="static/styles.css">
+                        <div id="cont" class="cont">
+                            <img src="static/csm_gueterbahn_karte_9cb0722ce7.jpg" width="100%">
+                            <svg id="svg" height="100%" width="100%" style="position: absolute;">
+                                <!--<line x1="0%" y1="0%" x2="50%" y2="50%" style="stroke: rgb(0, 0, 255); stroke-width: 5px" />-->
+                                
+                            </svg>
+                            <div id="end"></div>
+                        </div>
+                        <script src="static/scripts.js"></script>
+                    </div>
                 </div>
                 <div class="info-index" style="float: left; margin-left: 5%; margin-right: 5%;">
                     <div class="indent">

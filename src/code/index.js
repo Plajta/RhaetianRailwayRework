@@ -169,7 +169,15 @@ function FinalValidation(){
 function ShowMap(){
     var diag = document.getElementById("main-show-diag")
     var map = document.getElementById("main-show-map")
+
+    map.style["display"] = "block"
+    diag.style["display"] = "none"
 }
 
 function ShowDiag(){
+    var diag = document.getElementById("main-show-diag")
+    var map = document.getElementById("main-show-map")
+
+    map.style["display"] = "none"
+    diag.style["display"] = "block"
 }

@@ -181,3 +181,7 @@ function ShowDiag(){
     map.style["display"] = "none"
     diag.style["display"] = "block"
 }
+
+document.onload = () => {
+    ShowMap()
+}

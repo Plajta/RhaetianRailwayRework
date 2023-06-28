@@ -23,8 +23,13 @@
             <p id="white"> The world of the Rhaetian Railway has much to offer. Enjoy a trip through the Grisons with our <br> culinary delights or take in a piece of railway history with our steam and nostalgia trips. <br> We have the right rail experience for every taste - let yourself be inspired here! </p>
             <div class="body-child">
                 <div class="mapbox" style="float: left;">
+                    <div>
+                        <button id="map_button" onclick="ShowMap()">Map</button>
+                        <button id="diag_button" onclick="ShowDiag()">Diagram</button>
+                    </div>
                     <!--Put map code here-->
-                    <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1HBkKxkI8m9BoMldh-IZqHVeRkWdxiUQ&ehbc=2E312F" width="100%" height="100%"></iframe>
+                    <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1HBkKxkI8m9BoMldh-IZqHVeRkWdxiUQ&ehbc=2E312F" width="100%" height="100%" id="main-show-map"></iframe>
+                    <img src="./imgs/account.png" id="main-show-diag">
                 </div>
                 <div class="info-index" style="float: left; margin-left: 5%; margin-right: 5%;">
                     <div class="indent">

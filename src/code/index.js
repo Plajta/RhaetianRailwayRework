@@ -165,3 +165,11 @@ function ConfirmSelection(){
 function FinalValidation(){
     window.location.href = "./process.html"
 }
+
+function ShowMap(){
+    var diag = document.getElementById("main-show-diag")
+    var map = document.getElementById("main-show-map")
+}
+
+function ShowDiag(){
+}

@@ -1,0 +1,22 @@
+/* Container holding the image and the text */
+.cont {
+    position: relative;
+    text-align: left;
+    color: white;
+}
+
+/* Bottom left text */
+.lklk {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: green;
+    font-size: 4.5vw;
+    /* border: dotted black 2px; */
+}
+
+#svg {
+    display: block;
+    top: 0;
+    left: 0;
+}

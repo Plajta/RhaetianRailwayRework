@@ -342,6 +342,16 @@ img.train-spec-info{
     float: left;
 }
 
+.vybmapy{
+    background-color: #E2001A;
+    margin: 10px;
+}
+.vybermapy{
+    background-color: #EDECE6;
+}
+.mapselection{
+    background-color:#ffffff;
+
 #box{
     border-width: 2px;
     border-style: solid;

@@ -22,10 +22,14 @@
             <h1 id="white"> A fascinatingly different travel experience </h1>
             <p id="white"> The world of the Rhaetian Railway has much to offer. Enjoy a trip through the Grisons with our <br> culinary delights or take in a piece of railway history with our steam and nostalgia trips. <br> We have the right rail experience for every taste - let yourself be inspired here! </p>
             <div class="body-child">
+                <div id="mapselection" style="float: left;">
+                    <a id= "vybermapy" href="index.html">map</a>
+                    <a id= "vybmapy" href="diagram.html">diagram</a>
+                </div>
                 <div class="mapbox" style="float: left;">
                     <!--Put map code here-->
                     <!--<div id="map"></div>-->
-                    <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1HBkKxkI8m9BoMldh-IZqHVeRkWdxiUQ&ehbc=2E312F" width="100%" height="100%"></iframe>
+                    <img src="planek.png" id="map"><img>
                 </div>
                 <div class="info-index" style="float: left; margin-left: 5%; margin-right: 5%;">
                     <div class="indent">
@@ -47,7 +51,7 @@
                     <div class="indent">
                         <h2 style="float: left;">Date: <input type="datetime-local" id="DateTime"></h2>
                         <div class="timeselect" style="float: left; margin-left: 10px; margin-top: 19px;">
-                            <button onclick="shift_time(true)"><b><</b></button>
+                            <button onclick="shift_time(true)"><b></b></button>
                             <span id="time"><b id="timeshow">12:00</b></span>
                             <button onclick="shift_time(false)"><b>></b></button>
                         </div>

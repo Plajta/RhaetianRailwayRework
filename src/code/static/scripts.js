@@ -22,7 +22,7 @@ let stations = {
     "Arosa": [50.75, 34.7],
     "Untervaz": [43.5, 23],
     "Landquart": [43.5, 18],
-    "Schniers": [51.6, 15.7],
+    "Schiers": [51.6, 15.7],
     "Furna": [53.9, 17.4],
     "Kublis": [55.1, 19.1],
     "Klosters": [58.2, 24.2],
@@ -58,27 +58,35 @@ let st_to_st = {
     "Langweis": ["Peter", "Arosa"],
     "Arosa": ["Langweis"],
     "Untervaz": ["Chur", "Landquart"],
-    "Landquart": ["Untervaz", 18],
-    "Schniers": ["Landquart", 15.7],
-    "Furna": [53.9, 17.4],
-    "Kublis": [55.1, 19.1],
-    "Klosters": [58.2, 24.2],
-    "DavosDorf": [58.45, 38.9],
-    "DavosPlatz": [57.2, 41],
-    "Preda": [55.3, 51.8],
-    "Spinas": [57.2, 54.8],
-    "Rothenbrunnen": ["Reichenau", 41.4],
-    "Rodels": [42.8, 43.2],
-    "Thusis": [44.4, 46],
-    "Surava": [49.5, 47.4],
-    "Scuol": [74.5, 30.5],
-    "Zernez": [66.2, 43.5],
-    "Samedan": [54.7, 61.6],
-    "Pontresina": [56, 69],
-    "Poschiavo": [63, 80],
-    "Campocologno": [67.3, 86.8],
-    "Tirano": [68.7, 89.2]
+    "Landquart": ["Untervaz", "Schiers"],
+    "Schiers": ["Landquart", "Furna"],
+    "Furna": ["Schiers", "Kublis"],
+    "Kublis": ["Furna", "Klosters"],
+    "Klosters": ["Kublis", "DavosDorf", "Scuol", "Zernez"],
+    "DavosDorf": ["Klosters", "DavosPlatz"],
+    "DavosPlatz": ["DavosDorf", "Preda"],
+    "Preda": ["DavosPlatz", "Surava", "Spinas"],
+    "Spinas": ["Preda", "Samedan"],
+    "Rothenbrunnen": ["Reichenau", "Rodels"],
+    "Rodels": ["Rothenbrunnen", "Thusis"],
+    "Thusis": ["Rodels", "Surava"],
+    "Surava": ["Thusis", "Preda"],
+    "Scuol": ["Klosters", "Zernez"],
+    "Zernez": ["Klosters", "Scuol", "Samedan"],
+    "Samedan": ["Spinas", "Zernez", "Pontresina"],
+    "Pontresina": ["Samedan", "Poschiavo"],
+    "Poschiavo": ["Pontresina", "Campocologno"],
+    "Campocologno": ["Poschiavo", "Tirano"],
+    "Tirano": ["Campocologno"]
 };
+
+function findPath(from, ziel, path) {
+    if (from == "" || ziel == "") { return; }
+
+    if (!(from in st_to_st) || !(ziel in st_to_st)) { return; }
+
+    path = [0];
+}
 
 function circClick(event) {
     var target = event.target;
@@ -103,7 +111,8 @@ function circClick(event) {
     document.getElementsByClassName("from")[0].value = from;
     document.getElementsByClassName("to")[0].value = ziel;
     
-    drawLine(stations_line);
+    //findPath(from, ziel);
+    //drawLine(stations_line);
     console.log(from + " " + ziel);
 }
 

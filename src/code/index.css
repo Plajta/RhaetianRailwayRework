@@ -330,10 +330,22 @@ img.train-spec-info{
     margin-top: 20px;
     margin-left: 20px;
     cursor: pointer;
+    float: left;
 }
 
 .vl{
     border-left: 2px solid black;
     height: 60px;
     float: left;
+}
+
+#box{
+    border-width: 2px;
+    border-style: solid;
+    border-color: black;
+    padding: 10px 20px;
+    border-radius: 6px;
+    float: left;
+    margin-top: 10px;
+    margin-right: 100px;
 }

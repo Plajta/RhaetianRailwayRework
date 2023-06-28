@@ -20,3 +20,21 @@
     top: 0;
     left: 0;
 }
+
+#svg line {
+    stroke:rgb(0, 0, 255);
+    stroke-width:6;
+}
+
+circle {
+    fill: rgb(0, 255, 0);
+    fill-opacity: 255;
+    stroke: rgb(0, 255, 0);
+    stroke-width: 3px;
+    transition: stroke-opacity 0.5s, stroke-width 0.5s, transform 0.5s;
+    z-index: 10;
+  }
+  
+  circle:hover {
+    transform: scale(1.5);
+  }

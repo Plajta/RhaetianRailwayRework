@@ -54,7 +54,8 @@
 <p align="center">
   <img src="https://github.com/Plajta/RhaetianRailwayRework/blob/main/docs/imgs/PlajtaAndroidAppScreenShot6.png" width="300" height="auto">
 </p>
-- ticket QR code - `for tickets and souvenirs`
+
+- ticket QR code
 <p align="center">
   <img src="https://github.com/Plajta/RhaetianRailwayRework/blob/main/docs/imgs/PlajtaAndroidAppScreenShot7.png" width="300" height="auto">
 </p>

@@ -26,22 +26,22 @@
 #### Mobile app
 
 - Mobile app main page - `For buying tickets in an app`
-![main page mobile](https://github.com/Plajta/RhaetianRailwayRework/blob/main/docs/imgs/PlajtaAndroidScreenShot1.png "main page mobile")
+![main page mobile](https://github.com/Plajta/RhaetianRailwayRework/blob/main/docs/imgs/PlajtaAndroidAppScreenShot1.png "main page mobile")
 
 - Mobile app user profile - `interesting metrics collected by the app`
-![user](https://github.com/Plajta/RhaetianRailwayRework/blob/main/docs/imgs/PlajtaAndroidScreenShot2.png "user")
+![user](https://github.com/Plajta/RhaetianRailwayRework/blob/main/docs/imgs/PlajtaAndroidAppScreenShot2.png "user")
 
 - Mobile app settings
-![settings](https://github.com/Plajta/RhaetianRailwayRework/blob/main/docs/imgs/PlajtaAndroidScreenShot3.png "settings")
+![settings](https://github.com/Plajta/RhaetianRailwayRework/blob/main/docs/imgs/PlajtaAndroidAppScreenShot3.png "settings")
 
 - list of train connections from station A to station B
-![list of connections](https://github.com/Plajta/RhaetianRailwayRework/blob/main/docs/imgs/PlajtaAndroidScreenShot4.png "list of connections")
+![list of connections](https://github.com/Plajta/RhaetianRailwayRework/blob/main/docs/imgs/PlajtaAndroidAppScreenShot4.png "list of connections")
 
 - mobile app paywall
-![mobile app paywall](https://github.com/Plajta/RhaetianRailwayRework/blob/main/docs/imgs/PlajtaAndroidScreenShot5.png "mobile app paywall")
+![mobile app paywall](https://github.com/Plajta/RhaetianRailwayRework/blob/main/docs/imgs/PlajtaAndroidAppScreenShot5.png "mobile app paywall")
 
 - shopping cart - `for tickets and souvenirs`
-![shopping cart](https://github.com/Plajta/RhaetianRailwayRework/blob/main/docs/imgs/PlajtaAndroidScreenShot6.png "shopping cart")
+![shopping cart](https://github.com/Plajta/RhaetianRailwayRework/blob/main/docs/imgs/PlajtaAndroidAppScreenShot6.png "shopping cart")
 
 - ticket QR code - `for tickets and souvenirs`
-![ticket](https://github.com/Plajta/RhaetianRailwayRework/blob/main/docs/imgs/PlajtaAndroidScreenShot7.png "ticket")
+![ticket](https://github.com/Plajta/RhaetianRailwayRework/blob/main/docs/imgs/PlajtaAndroidAppScreenShot7.png "ticket")

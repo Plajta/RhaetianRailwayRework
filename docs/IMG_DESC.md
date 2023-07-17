@@ -26,6 +26,8 @@
 #### Mobile app
 
 - Mobile app main page - `For buying tickets in an app`
+<img src="https://github.com/Plajta/RhaetianRailwayRework/blob/main/docs/imgs/PlajtaAndroidAppScreenShot1.png" height="30%">
+
 ![main page mobile](https://github.com/Plajta/RhaetianRailwayRework/blob/main/docs/imgs/PlajtaAndroidAppScreenShot1.png "main page mobile")
 
 - Mobile app user profile - `interesting metrics collected by the app`

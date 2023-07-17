@@ -27,8 +27,16 @@ We also took inspiration from other railway companies like ČD, Deutsche Bahn an
 
 ---
 
+## Screenshots from draft
+Acces via: 
+
+
+---
+
 ## Redirects to a code and a sample website:
 
 Figma (draft/proposal): [https://www.figma.com/file/RhaetianRailwayRework](https://www.figma.com/file/rDcmyCU0f9u9SazK930IB1/Rh%C3%A9tsk%C3%A1-dr%C3%A1ha?type=design&node-id=0%3A1&mode=design&t=yza7BmH50CmrRRGm-1)
 
 Small sample website:  [https://www.plajta.github.io/RhaetianRailwayRework](https://plajta.github.io/RhaetianRailwayRework/src/code/index.html)
+
+#### NOTE: This sample website is just a PoC (Proof of Concept), has only 2 stations loaded and only seat 25 works

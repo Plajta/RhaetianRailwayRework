@@ -22,6 +22,8 @@ We also took inspiration from other railway companies like ČD, Deutsche Bahn an
 4. Created a simple app for RhB customers
 5. Mobile version for the RhB website
 6. Simple map iframe using Google Maps services to show location of every RhB station and some info about them
+7. Added diagram functionality similar to metro station diagrams.
+8. Made stations selectable from the diagram
 
 ---
 

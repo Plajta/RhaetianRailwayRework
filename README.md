@@ -28,7 +28,7 @@ We also took inspiration from other railway companies like ČD, Deutsche Bahn an
 ---
 
 ## Screenshots from draft
-Acces via: 
+Acces via: https://github.com/Plajta/RhaetianRailwayRework/blob/main/docs/IMG_DESC.md
 
 
 ---

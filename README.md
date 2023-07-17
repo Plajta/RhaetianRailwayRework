@@ -21,6 +21,7 @@ We also took inspiration from other railway companies like ČD, Deutsche Bahn an
 3. Homogennous page styling
 4. Created a simple app for RhB customers
 5. Mobile version for the RhB website
+6. Simple map iframe using Google Maps services to show location of every RhB station and some info about them
 
 ---
 
@@ -28,4 +29,4 @@ We also took inspiration from other railway companies like ČD, Deutsche Bahn an
 
 Figma (draft/proposal): [https://www.figma.com/file/RhaetianRailwayRework](https://www.figma.com/file/rDcmyCU0f9u9SazK930IB1/Rh%C3%A9tsk%C3%A1-dr%C3%A1ha?type=design&node-id=0%3A1&mode=design&t=yza7BmH50CmrRRGm-1)
 
-Small sample website: 
+Small sample website:  [https://www.plajta.github.io/RhaetianRailwayRework](https://plajta.github.io/RhaetianRailwayRework/src/code/index.html)
